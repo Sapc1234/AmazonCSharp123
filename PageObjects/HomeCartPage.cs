@@ -9,17 +9,15 @@ namespace Amazon.PageObjects
 {
     public class HomeCartPage
     {
-        public IWebDriver driver;
-
         private By homePageCart = By.CssSelector("a[id='nav-cart']");
         private By clickonAmazonLogo = By.XPath("//div[@id='nav-logo']/a");
        
-
+        public IWebDriver driver;
+      
         public HomeCartPage(IWebDriver driver)
 
         {
             this.driver = driver;
-
         }
 
         public void backToCart()
