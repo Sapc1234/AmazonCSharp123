@@ -11,19 +11,18 @@ namespace Amazon.PageObjects
 {
     public class addToCart
     {
-         public IWebDriver driver;
+        
 
         private By clickaddToCart = By.XPath("//input[@name='submit.add-to-cart']");
         private By selectquantity = By.XPath("//select[@id='quantity']");
      
-
+        public IWebDriver driver;
        
 
         public addToCart(IWebDriver driver)
 
         {
             this.driver = driver;
-            
         }
 
        
