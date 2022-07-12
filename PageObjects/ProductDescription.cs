@@ -9,40 +9,29 @@ using System.Threading;
 
 namespace Amazon.PageObjects
 {
-    public class addToCart
+    public class ProductDescription
     {
-        
-
-        private By clickaddToCart = By.XPath("//input[@name='submit.add-to-cart']");
         private By selectquantity = By.XPath("//select[@id='quantity']");
-     
+        private By clickaddToCart = By.XPath("//input[@name='submit.add-to-cart']");
+        
         public IWebDriver driver;
        
-
-        public addToCart(IWebDriver driver)
-
+        public ProductDescription(IWebDriver driver)
         {
             this.driver = driver;
         }
 
-       
-
         public void selecttQuantity()
-
         {
             IWebElement staticdropDown = driver.FindElement(selectquantity);
             SelectElement sd = new SelectElement(staticdropDown);
             sd.SelectByValue("3");
         }
 
-
-       
         public void clickonAddToCart()
         {
             driver.FindElement(clickaddToCart).Click();
         }
-
-       
 
     }
 }
