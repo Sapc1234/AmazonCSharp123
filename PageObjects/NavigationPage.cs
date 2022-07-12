@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Amazon.PageObjects
 {
-    public class NavigationPage
+    public class NavigationPage 
     {
         private By homePageCart = By.CssSelector("a[id='nav-cart']");
         private By clickonAmazonLogo = By.XPath("//div[@id='nav-logo']/a");
